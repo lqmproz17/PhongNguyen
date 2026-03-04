@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nguyễn Lâm Anh Phong - Portfolio</title>
+    <style>
+        /* Thiết lập nền và font chữ chung */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f0f0f;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        /* Màn hình chờ (Loading Screen) */
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            transition: opacity 0.8s ease-in-out;
+        }
+
+        /* Chỉnh sửa chữ CHÀO MỪNG tại đây */
+        #loader h1 {
+            font-size: 4rem;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            color: #00d4ff;
+            text-shadow: 0 0 20px rgba(0, 212, 255, 0.6);
+            animation: fadeInOut 2s infinite ease-in-out;
+        }
+
+        @keyframes fadeInOut {
+            0%, 100% { opacity: 0.3; transform: scale(0.95); }
+            50% { opacity: 1; transform: scale(1); }
+        }
+
+        /* Nội dung giới thiệu bản thân */
+        #profile {
+            text-align: center;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+            padding: 40px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(15px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            max-width: 400px;
+        }
+
+        #profile.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        h2 { 
+            color: #00d4ff; 
+            font-size: 2rem; 
+            margin-bottom: 20px; 
+        }
+
+        .info-item {
+            font-size: 1.1rem;
+            margin: 15px 0;
+            color: #ccc;
+        }
+
+        .info-item strong {
+            color: #fff;
+        }
+
+        .email { 
+            color: #f39c12; 
+            text-decoration: none; 
+            transition: 0.3s;
+        }
+
+        .email:hover { 
+            color: #ffb43a;
+            text-shadow: 0 0 10px rgba(243, 156, 18, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="loader">
+        <h1>Chào Mừng</h1>
+    </div>
+
+    <div id="profile">
+        <h2>Giới Thiệu</h2>
+        <div class="info-item"><strong>Họ và tên:</strong> Nguyễn Lâm Anh Phong</div>
+        <div class="info-item"><strong>Tuổi:</strong> 18</div>
+        <div class="info-item">
+            <strong>Email:</strong> <br>
+            <a href="mailto:nguyenlamanhphong2025@gmail.com" class="email">nguyenlamanhphong2025@gmail.com</a>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('load', () => {
+            const loader = document.getElementById('loader');
+            const profile = document.getElementById('profile');
+
+            // Hiển thị chữ "Chào Mừng" trong 2.5 giây
+            setTimeout(() => {
+                loader.style.opacity = '0'; // Làm mờ màn hình chờ
+                
+                setTimeout(() => {
+                    loader.style.display = 'none'; // Xóa hẳn loader khỏi màn hình
+                    profile.classList.add('visible'); // Hiện thông tin cá nhân lên
+                }, 800); 
+            }, 2500);
+        });
+    </script>
+</body>
+</html>
