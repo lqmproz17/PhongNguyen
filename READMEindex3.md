@@ -139,8 +139,9 @@ Nền tảng: Google Germini
 *  max-width: 800px;: Giới hạn chiều rộng tối đa của ảnh.
 
            * width: 100%; height: auto;: Đảm bảo ảnh tự co giãn theo màn hình (Responsive) mà không bị méo.
----
 
+
+```
 ## III. Kết quả
 > Sau khi ra lệnh cho AI thì em được đoạn code sau:
 ```
