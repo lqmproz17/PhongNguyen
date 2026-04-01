@@ -1,5 +1,7 @@
-Em sử dụng Google Germini
-Đoạn code HTML ban đầu :
+Em sử dụng: Google Germini
+
+> Đoạn code HTML ban đầu :
+```
 <!DOCTYPE html>
 <html lang="vi">
 <head>
@@ -7,8 +9,8 @@ Em sử dụng Google Germini
     <title>MacBook Neo - Pure HTML Version</title>
 </head>
 <body bgcolor="#f5f5f7" text="#1d1d1f">
-
-    <center>
+    
+  <center>
         <font size="2" face="Arial">
             Chọn quốc gia hoặc khu vực khác để xem nội dung dành riêng cho vị trí của bạn và mua sắm trực tuyến.
             <select>
@@ -63,8 +65,9 @@ Em sử dụng Google Germini
 
 </body>
 </html>
-
-Sau khi sử Ai và ra lệnh thì em được đoạn code sau:
+```
+> Sau khi sử Ai và ra lệnh thì em được đoạn code sau:
+```
 <!DOCTYPE html>
 <html lang="vi">
 <head>
