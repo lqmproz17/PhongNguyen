@@ -66,7 +66,7 @@ Em sử dụng: Google Germini
 </body>
 </html>
 ```
-> Sau khi sử Ai và ra lệnh thì em được đoạn code sau:
+> Sau khi ra lệnh cho AI thì em được đoạn code sau:
 ```
 <!DOCTYPE html>
 <html lang="vi">
