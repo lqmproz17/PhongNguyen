@@ -1,0 +1,19 @@
+/* Vùng 1 - Header */
+
+header {
+    background-color: #87CEFA;
+    /* xanh dương nhạt */
+    color: #ffffff;
+    padding: 20px 0;
+}
+
+
+/* Vùng 4 - Footer */
+
+footer {
+    background-color: red;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+}
